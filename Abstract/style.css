@@ -90,7 +90,7 @@ select {
 
 body {
   font-family: var(--font-family);
-  font-size: var(--font-size-800);
+  font-size: var(--font-size-700);
   font-weight: 500;
 }
 
@@ -144,5 +144,53 @@ body {
 
 .header__grid-item > a:last-of-type:is(:hover, :focus-visible) {
   background-color: var(--color-neutral-100);
+  color: var(--color-primary-500);
+}
+
+.hero {
+  background-color: var(--color-neutral-300);
+  padding-block: 4em;
+  text-align: center;
+}
+
+h1 {
+  font-size: var(--font-size-900);
+  font-weight: 300;
+}
+
+.hero__search-form {
+  align-items: center;
+  background-color: var(--color-neutral-100);
+  border: 1px solid;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  max-width: 100%;
+  padding-inline: 1em;
+  width: 30em;
+  margin-inline: auto;
+}
+
+.hero__search-form > input {
+  border: 0;
+  font: inherit;
+  padding-block: 0.5em;
+  width: 100%;
+}
+
+.hero__search-form > input:focus-within {
+  outline: 0;
+}
+
+.search-form__arrow {
+  font-size: 40px;
+}
+
+.hero__search-form:is(:focus-within, :hover) {
+  border-color: var(--color-primary-500);
+}
+
+.hero__search-form:is(:focus-within, :hover) > .search-form__arrow {
   color: var(--color-primary-500);
 }
