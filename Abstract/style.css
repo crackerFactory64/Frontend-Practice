@@ -84,8 +84,7 @@ select {
   --font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 
   --font-size-600: 1rem;
-  --font-size-700: 1.25rem;
-  --font-size-800: 1.5rem;
+  --font-size-700: 1.5rem;
   --font-size-900: 5rem;
 }
 
@@ -97,6 +96,53 @@ body {
 
 .container {
   margin-inline: auto;
-  max-width: 1700px;
+  max-width: 1650px;
   width: calc(100% - 4rem);
+}
+
+.header {
+  background-color: var(--color-neutral-900);
+  color: var(--color-neutral-100);
+  font-size: var(--font-size-700);
+  padding-block: 1em;
+}
+
+.header__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: space-between;
+}
+
+.header__grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.header__logo {
+  max-width: 125px;
+}
+
+.header__grid-item > a {
+  border-radius: 10px;
+  color: inherit;
+  font: inherit;
+  padding: 0.33em 1em;
+  text-decoration: none;
+}
+
+.header__grid-item > a:first-of-type {
+  border: 1px solid;
+  margin-inline-start: auto;
+}
+
+.header__grid-item > a:last-of-type {
+  background-color: var(--color-primary-500);
+  margin-inline-start: 0.5em;
+  transition: 250ms;
+}
+
+.header__grid-item > a:last-of-type:is(:hover, :focus-visible) {
+  background-color: var(--color-neutral-100);
+  color: var(--color-primary-500);
 }
