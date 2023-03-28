@@ -92,4 +92,11 @@ select {
 body {
   font-family: var(--font-family);
   font-size: var(--font-size-800);
+  font-weight: 500;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 1700px;
+  width: calc(100% - 4rem);
 }
