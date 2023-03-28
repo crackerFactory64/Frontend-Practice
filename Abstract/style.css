@@ -194,3 +194,51 @@ h1 {
 .hero__search-form:is(:focus-within, :hover) > .search-form__arrow {
   color: var(--color-primary-500);
 }
+
+.contents {
+  padding-block: 5em;
+}
+
+.contents > .container {
+  max-width: 1400px;
+}
+
+.contents__grid {
+  display: grid;
+  gap: 3em 1em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.contents__grid-item {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: auto 1fr;
+}
+
+.contents__grid-item > img {
+  max-width: 100px;
+}
+
+.contents__grid-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.contents__grid-item h2 {
+  font-size: var(--font-size-700);
+}
+
+.contents__grid-item p {
+  opacity: 0.66;
+}
+
+.contents__grid-item a {
+  color: var(--color-primary-500);
+  text-decoration: none;
+}
+
+.contents__grid-item a:is(:hover, :focus-visible) {
+  text-decoration: underline;
+}
