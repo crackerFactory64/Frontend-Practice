@@ -79,6 +79,10 @@ a {
   text-decoration: none;
 }
 
+a:not([class]):is(:hover, :focus-visible) {
+  text-decoration: underline;
+}
+
 /*RESET ENDS*/
 
 :root {
